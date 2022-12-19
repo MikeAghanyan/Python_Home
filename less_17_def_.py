@@ -38,7 +38,7 @@
 # print(multiply())
 
 # ------------------------------------------------------
-# '''SUM ALL LETTERS AND NUMBERS'''
+'''SUM ALL LETTERS AND NUMBERS'''
 # def allsumm(text = input('Enter the numbers and the letters ---> ')) -> str:
 #     a = 0
 #     b = '' # esli otdel'no to []
@@ -90,7 +90,7 @@
 # age = age.split(',')
 
 # ------------------------------------------------------
-''' kak zakrit' funkciju ????????????????????????'''
+'''DRAW BOX'''
 # import lib
 # lib.drawbox()
 

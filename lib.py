@@ -78,3 +78,72 @@ def mediannumber(*a:int):
         for i in range(len(mylist) + 1):
             if i == int(x):
                 return mylist[i]
+
+'''Car number -----------BOOK_101'''
+import random
+
+def carnumber():
+    alpha = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+    num = '123456789'
+    a_list = []
+    n_list = []
+    a_count = 0
+    n_count = 0
+    c_num = ''
+
+    for i in alpha:
+        a_list.append(i)
+
+    for i in num:
+        n_list.append(i)
+
+    newcarnum = random.randint(0, 1)
+
+    if newcarnum == 1:
+        n = 4
+        while n_count != n:
+            random.shuffle(n_list)
+            c_num += n_list[1]
+            n_count += 1
+        while a_count != 3:
+            c_num += random.choice(a_list)
+            a_count += 1
+        return f'Ur car number is ---> {c_num}'
+
+    else:
+        n = 3
+        while a_count != 3:
+            c_num += random.choice(a_list)
+            a_count += 1
+        while n_count != n:
+            random.shuffle(n_list)
+            c_num += n_list[1]
+            n_count += 1
+        return f'Ur car number is ---> {c_num}'
+
+'''Password Generator -----------BOOK_100'''
+
+def passwordGenerator(a:int, n:int):
+    import random
+    lenght = random.randint(a, n)
+    pas = ''
+    for i in range(lenght):
+        pas += chr(random.randint(33, 126))
+    return pas
+    
+'''Password check -----------BOOK_102'''
+
+def passwordCheck(pas:str): #'Enter ur password'
+    symb = '!@#$%^&*()_+<>?:"|[{]}/;~`-=\,./'
+    num = '1234567890'
+    upper = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+    if len(pas) <= 8:
+        return ValueError('-------------Not enought symbols /Minimum 8 symbols/ ------------- '  )              
+    else:
+        if upper in pas < 2:
+            return ValueError('------------- Minimum 2 upper letter  ------------- '  )
+        else:
+            if (symb in pas < 2)  and (num in pas < 2):
+                return ValueError('------------- Minimum 2 symbols and 2 numbers ------------- '  )  
+            else:
+                return '----- !!!!---------- Congrats ----- it is a strong password ----- !!!!---------- '
