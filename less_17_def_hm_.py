@@ -35,10 +35,10 @@ import time
 
 '''Car number -----------BOOK_101'''
 # import time
-# import random
 
 # def carnumber():
 
+    # import random
 #     alpha = 'QWERTYUIOPASDFGHJKLZXCVBNM'
 #     num = '123456789'
 #     a_list = []
@@ -107,17 +107,19 @@ import time
 
 '''PasswordGeneratorV03 -----------BOOK_102'''
 
-def passwordGeneratorV03(keyword:str) -> str:
-    import random
-    symb = '!@#$%^&*()_+<>?:"|[{]}/;~`-=\,./'
-    upper = 'QWERTYUIOPASDFGHJKLZXCVBNM'
-    a = keyword.shuffle()
-    for _ in random.range(1, 4):
-        a += random.randint(0, 100)
-        a += random.choice(symb)
-        a += random.choice(upper)
-    return a
-print(passwordGeneratorV03('Edgar'))
+# def passwordGeneratorV03(keyword:str) -> str:
+#     import random
+#     symb = '!@#$%^&*()_+<>?:"|[{]}/;~`-=\,./'
+#     upper = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+#     keyword:
+#         a 
+#     random.shuffle(a)
+#     for _ in random.range(1, 4):
+#         a += random.randint(0, 100)
+#         a += random.choice(symb)
+#         a += random.choice(upper)
+#     return a
+# print(passwordGeneratorV03('Edgar'))
 
 '''String in the middle -----------BOOK_93'''
 

@@ -33,7 +33,10 @@
 #         x = input('Enter a number ---> ')
 #         if x == '':
 #             return a
-#         elif x.isdigit():
+#         elif '.' in x:
+#             x = isinstance(x, float)
+#             print(x)
+#         elif x.isdigit(): 
 #             a *= int(x)
 # print(multiply())
 
