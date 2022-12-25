@@ -109,17 +109,16 @@ import time
 
 # def passwordGeneratorV03(keyword:str) -> str:
 #     import random
+#     num = '123456789'
 #     symb = '!@#$%^&*()_+<>?:"|[{]}/;~`-=\,./'
 #     upper = 'QWERTYUIOPASDFGHJKLZXCVBNM'
-#     keyword:
-#         a 
-#     random.shuffle(a)
-#     for _ in random.range(1, 4):
-#         a += random.randint(0, 100)
-#         a += random.choice(symb)
-#         a += random.choice(upper)
-#     return a
-# print(passwordGeneratorV03('Edgar'))
+#     for _ in range (4, 8):
+#         keyword += random.choice(keyword)
+#         keyword += random.choice(num)
+#         keyword += random.choice(symb)
+#         keyword += random.choice(upper)
+#     return keyword
+# print(passwordGeneratorV03('.'))
 
 '''String in the middle -----------BOOK_93'''
 
