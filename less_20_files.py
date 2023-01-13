@@ -203,37 +203,37 @@
 
 # ---------------------------------------------------------------------------------------------------------------------------
 '''Calculator''' '''------ kak zdelat' excepr dlya s is int or float? -----'''
-def calculator(x:float, s:str, y:float) -> float:
-    try:
-        if s == '+':
-            a = x + y
-            return a
-        elif s == '-':
-            a = x - y
-            return a
-        elif s == '*':
-            a = x * y
-            return a
-        # elif s == '/':
-        #     a = x / y
-        #     return a
-        elif s == '**':
-            a = x ** y
-            return a
-        try:
-            if s =='/':
-                a = x / y
-                return a
-        except ZeroDivisionError:
-            return '!!!  [ y != 0 ] ---- !!!'
-    except isinstance(s, float):
-        return 'Enter a float numbers for x and y !!! Only char needs to be a string symbol!!!'
+# def calculator(x:float, s:str, y:float) -> float:
+
+#     if s == '+':
+#         a = x + y
+#         return a
+#     elif s == '-':
+#         a = x - y
+#         return a
+#     elif s == '*':
+#         a = x * y
+#         return a
+#     # elif s == '/':
+#     #     a = x / y
+#     #     return a
+#     elif s == '**':
+#         a = x ** y
+#         return a
+#     try:
+#         if s =='/':
+#             a = x / y
+#             return a
+#     except ZeroDivisionError:
+#         return '!!!  [ y != 0 ] ---- !!!'
+#     else:
+#         return 'Enter a float numbers for x and y !!! Only char needs to be a string symbol!!!'
 
 
-try:
-    print(calculator((float(input('Enter the first number ( x = )---> '))), input('Enter a char ---> '), float(input('Enter the second number ( y = )---> '))))
-except ValueError:
-    print('Enter a float numbers for x and y !!! Only char needs to be a string symbol!!!')
+# try:
+#     print(calculator((float(input('Enter the first number ( x = )---> '))), input('Enter a char ---> '), float(input('Enter the second number ( y = )---> '))))
+# except ValueError:
+#     print('Enter a float numbers for x and y !!! Only char needs to be a string symbol!!!')
 
 # ---------------------------------------------------------------------------------------------------------------------------
 ''' BOOOK ---- 149 '''
