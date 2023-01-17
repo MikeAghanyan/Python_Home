@@ -1,0 +1,1 @@
+"Below {self.num} the summ of all the multiples of 3 and 5 is {self.sum}"
