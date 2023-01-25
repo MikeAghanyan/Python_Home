@@ -250,50 +250,121 @@
 
 #  --------------------------------------------------------------------------------------------------
 '''ex - 3'''
-class sum_of_multiplies():
+# class sum_of_multiplies():
     
-    '''
-    Class to solve the 3 exercise in lesson 27 presentation.
-    '''
-    def __init__(self, number:int = None, summ_all = None) -> None:
-        self.num = number
-        self.sum = summ_all
+#     '''
+#     Class to solve the 3 exercise in lesson 27 presentation.
+#     '''
+#     def __init__(self, number:int = None, summ_all = None) -> None:
+#         self.num = number
+#         self.sum = summ_all
 
-    def summ(self):
+#     def summ(self):
 
-        import json
+#         import json
 
-        '''
-        function created to find the sum of all the multiples of 3 and 5 below the given number.
-        '''
+#         '''
+#         function created to find the sum of all the multiples of 3 and 5 below the given number.
+#         '''
        
-        self.num = int(input('Enter a number of searching range end ---> '))
-        self.sum = 0
-        for i in range(self.num):
-            if (i % 3) == 0 or (i % 5 == 0):
-                self.sum += i
-        return self.sum
+#         self.num = int(input('Enter a number of searching range end ---> '))
+#         self.sum = 0
+#         for i in range(self.num):
+#             if (i % 3) == 0 or (i % 5 == 0):
+#                 self.sum += i
+#         return self.sum
        
-        # with open('3_5.json', 'w') as file:
-        #     json.dump('Below {self.num} the summ of all the multiples of 3 and 5 is {self.sum}', file)
+#         # with open('3_5.json', 'w') as file:
+#         #     json.dump('Below {self.num} the summ of all the multiples of 3 and 5 is {self.sum}', file)
 
-    # def to_json(self):
+#     # def to_json(self):
         
         
 
         
-y = sum_of_multiplies()
-print(y.summ())
-# y.sum()
+# y = sum_of_multiplies()
+# print(y.summ())
+# # y.sum()
+
+
+# def high_and_low(numbers):
+#     numbers = numbers.split(' ')
+#     m = []
+#     # for 
+        
+#     return f'{max(m)} {min(m)}', i in numbers m.append(int(i))
+
+# print(high_and_low('8 3 -5 42 -1 0 0 -9 4 7 4 -4'))
+    
+
+# -----------------------------------------------------------------
+
+    # 
+# userprofile = {
+#     'Jim': (1234, 15, ),
+#     'Karl': (2345, 150),
+#     'Bob': (7895, 250)
+# }
+
+# menu = {
+#     1:'Check balance', 
+#     2:'Cash in',
+#     3: 'Cash out',
+#     0: 'Exite'
+#     }
+
+# class Bankomat():
+
+#     def __init__(self, balance) -> None:
+#         self.log = login
+#         self.passw = password
+
+#     def takescard(self, login, password):
+#         count = 0
+#         if count < 3:   
+#             if login not in userprofile and password != userprofile[login]:
+#                 count += 1
+#                 return '!!! ----- Wrong login or password ---- !!! \n----> {count} tryes left <----'
+#             else:
+#                 Bankomat.menu()            
+#         else:
+#             '!!!!!!!-------YOU-------CARD------IS--------BLOCKED--------!!!!!!!'
+
+#     def menu(self, services:int=None) -> dict:
+#         if services == None:
+#             return menu
+#         elif services == 1:
+#             return userprofile[login[1]] 
 
 
     
 
 
+# user1 = Bankomat()
+# print(user1.takescard('Bob', 7896))
+# import functools
 
 
+# count = 0
+# def lazy(n):
+#     global count
+#     def test_lazy(func, count):
+#         count += 1
+#         print(count)
+#     if n == 0:
+#         return break
+#     elif n == -1:
+#         return None
+#     elif n == 1 or n == n + 1:
+#         functools.wraps(wrapped=func):
+#         def wrapped_half(*args):
+#             if n == 0:
+#                 return None
+#             else:
+#                 return func(*args):
 
 
-    
-
+# @lazy()    
+# def half(x):
+#     return x/2
 
