@@ -1,0 +1,5 @@
+ZeroDivisionError "-----" 2023-01-31 02:24:10.645285
+ValueError "-----" 2023-01-31 02:57:54.196516
+ZeroDivisionError <function calculator at 0x00000233643F8900> "-----" 2023-01-31 02:58:31.975866
+ZeroDivisionError calculator "-----" 2023-01-31 02:58:55.468485
+In calculator ----- TypeError ----- 2023-01-31 03:02:54.260216
