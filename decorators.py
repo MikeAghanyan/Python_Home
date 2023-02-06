@@ -148,45 +148,72 @@
 '''Decorators.basic #4 'Count' '''
 # from typing import Callable, Any
 
+## class Counter:
+
+# #    dec_count = 0
+##     func_count = 0
+#
+#  #   def __init__(self, func_count) -> None:
+# #        Counter.dec_count += 1
+##         self.func_count = func_count
+#
+# #    def __call__(self, **kwargs) -> None:
+##         self.func_count += 1
+##         return kwargs.__name__
+
 # class Counter:
 
-#     dec_count = 0
-#     func_count = 0
+#     count = 0
 
-#     def __init__(self, func_count) -> None:
-#         Counter.dec_count += 1
-#         self.func_count = func_count
+#     def __init__(self, *args):
+#         Counter.count += 1
 
-#     def __call__(self, **kwargs) -> None:
-#         self.func_count += 1
-#         return kwargs.__name__
+#     def __call__(self):
+#         return f'{self.count}'
+# 
+# 
 
-class Counter:
+# @Counter
+# def test():
+#     return 'Hello'
 
-    count = 0
+# @Counter
+# def func():
+#     return 'Hello'
 
-    def __init__(self, *args):
-        Counter.count += 1
+# @Counter
+# def show():
+#     return 'Hello'    
 
-    def __call__(self):
-        return f'{self.count}'
+# @Counter
+# def show_print():
+#     return 'Hello'
+
+# print(func())
 
 
+'''Decorators.intermediate #1 Permission' '''
 
-@Counter
-def test():
-    return 'Hello'
+# import functools
+# from typing import Callable, Any
 
-@Counter
-def func():
-    return 'Hello'
+# user = list[input('Enter ur loggin ---> ')]
 
-@Counter
-def show():
-    return 'Hello'    
+# def check_permision(*args, **kwargs) -> Any:
+#     def permision(user):
+#             if args == user:
+#                 print(function)
+#             else:
+#                 print('PermissionError: y пользователя недостаточно прав, чтобы выполнить функцию add_comment')
+#     return permision
 
-@Counter
-def show_print():
-    return 'Hello'
+# @check_permision('admin')
+# def delet_site() -> str:
+#     return ('------ Deleted -------')
 
-print(func())
+# @check_permision('user1')
+# def add_comment() -> str:
+#     return '---- ADD COMMENT ------'
+
+# delet_site()
+# add_comment()
